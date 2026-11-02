@@ -143,6 +143,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
 
+PRODUCT_SYSTEM_PROPERTIES += \
+    debug.hwui.use_hint_manager=true \
+    debug.sf.enable_adpf_cpu_hint=true
+
 PRODUCT_ODM_PROPERTIES += \
     debug.sf.enable_hwc_vds=0 \
     persist.sys.sf.color_mode=0 \
