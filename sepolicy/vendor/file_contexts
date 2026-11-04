@@ -67,3 +67,7 @@
 
 # Wakeup nodes
 /sys/devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:sound/Listen\s[0-9]+\sAudio\sService/wakeup/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+
+# GPU tuning
+/sys/class/kgsl/kgsl-3d0/devfreq(/.*)?                        u:object_r:vendor_sysfs_devfreq:s0
+/sys/devices/platform/soc/[0-9a-f]+\.qcom,kgsl-3d0/devfreq(/.*)? u:object_r:vendor_sysfs_devfreq:s0
