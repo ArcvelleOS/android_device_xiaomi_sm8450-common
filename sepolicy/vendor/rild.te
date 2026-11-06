@@ -1,0 +1,5 @@
+# OEM
+set_prop(rild, vendor_oem_prop)
+
+# Radio
+dontaudit rild default_prop:file read;
