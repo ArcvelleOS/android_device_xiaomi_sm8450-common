@@ -71,3 +71,6 @@
 # GPU tuning
 /sys/class/kgsl/kgsl-3d0/devfreq(/.*)?                        u:object_r:vendor_sysfs_devfreq:s0
 /sys/devices/platform/soc/[0-9a-f]+\.qcom,kgsl-3d0/devfreq(/.*)? u:object_r:vendor_sysfs_devfreq:s0
+
+# Duck RKP
+/vendor/bin/duck_rkp u:object_r:duck_rkp_exec:s0

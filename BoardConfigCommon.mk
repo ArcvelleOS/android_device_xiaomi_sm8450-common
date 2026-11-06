@@ -47,7 +47,9 @@ SOONG_CONFIG_dolby_vision += enabled
 SOONG_CONFIG_dolby_vision_enabled := true
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(HARDWARE_PATH)/vintf/xiaomi_framework_compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(COMMON_PATH)/duck-rkp/compatibility_matrix.xml \
+    $(HARDWARE_PATH)/vintf/xiaomi_framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/hidl/manifest.xml
 ifeq ($(TARGET_NFC_SKU),)
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/hidl/manifest_nfc.xml
