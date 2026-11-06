@@ -1,2 +1,5 @@
 # WFD
 get_prop(system_server, vendor_wfd_sys_prop)
+
+# Allow CachedAppOptimizer to compact memory of background apps
+allow system_server audioserver_tmpfs:file rw_file_perms;
