@@ -1,0 +1,2 @@
+# Perf
+dontaudit priv_app_all vendor_hal_perf2_service:service_manager find;
